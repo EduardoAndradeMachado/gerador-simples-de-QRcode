@@ -55,6 +55,7 @@ button:hover {
 .option-card p {
     margin-top: 0px;
     line-height: 0px;
+    margin-bottom: 8px;
 }
 
 .option-card:hover {
