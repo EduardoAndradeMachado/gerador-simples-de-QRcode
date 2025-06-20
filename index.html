@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="assets/css/global/global.css" rel="stylesheet">
+    <!-- Favicon para tema claro -->
+    <link rel="icon" href="assets/images/global/favicon-black.svg" media="(prefers-color-scheme: light)">
+    <!-- Favicon para tema escuro -->
+    <link rel="icon" href="assets/images/global/favicon-white.svg" media="(prefers-color-scheme: dark)">
+    <!-- Espefico da página -->
+    <link href="assets/css/pages/home.css" rel="stylesheet">
+    <script src="assets/js/options.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js" defer></script>
+    <title>Gerador de QR Code Simples</title>
+</head>
+
+<body>
+    <main>
+        <h1>Gerador simples de QRcode</h1>
+        <div id="qrcode">
+            <img src="assets/images/type-icons/qrcode-model.svg" alt="Modelo de QR Code">
+        </div>
+        <button id="gerar-QRcode">Gerar QRcode</button>
+
+        <div class="qr-options">
+            <div class="qr-options-group">
+                <input type="radio" id="type-url" name="qrType" value="url" hidden>
+                <label for="type-url" class="option-card">
+                    <img src="assets/images/type-icons/type-url.svg" alt="URL Icon">
+                    <p>URL</p>
+                </label>
+
+                <input type="radio" id="type-wpp" name="qrType" value="wpp" hidden>
+                <label for="type-wpp" class="option-card">
+                    <img src="assets/images/type-icons/type-whatsapp.svg" alt="Whatsapp Icon">
+                    <p>Whatsapp</p>
+                </label>
+
+                <input type="radio" id="type-telefone" name="qrType" value="telefone" hidden>
+                <label for="type-telefone" class="option-card">
+                    <img src="assets/images/type-icons/type-telefone.svg" alt="Telefone Icon">
+                    <p>Telefone</p>
+                </label>
+
+                <input type="radio" id="type-pix" name="qrType" value="pix" hidden>
+                <label for="type-pix" class="option-card">
+                    <img src="assets/images/type-icons/type-pix.svg" alt="PIX Icon">
+                    <p>PIX</p>
+                </label>
+            </div>
+            <div id="qr-options-input">
+                <div id="block-url" class="hidden">
+                    <input type="text" placeholder="Digite a url">
+                </div>
+                <div id="block-wpp" class="hidden">
+                    <input type="text" placeholder="Digite o número de whatsapp">
+                </div>
+                <div id="block-telefone" class="hidden">
+                    <input type="text" placeholder="Digite o número de telefone">
+                </div>
+                <div id="block-pix" class="hidden">
+                    <input type="text" name="pixKey" placeholder="Chave Pix">
+                    <input type="text" name="receiverName" placeholder="Nome do recebedor">
+                    <input type="text" name="receiverCity" placeholder="Cidade">
+                    <input type="text" name="amount" placeholder="Valor (opcional)">
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+
+    <footer>
+        <div id="footer">
+            <p>Projetado por <a href="https://eduardom.com.br">EduardoM</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>

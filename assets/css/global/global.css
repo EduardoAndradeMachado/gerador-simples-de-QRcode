@@ -1,0 +1,97 @@
+@import url('reset.css');
+@import url('font.css');
+@import url('sections/footer.css');
+
+:root {
+    --color-branco: #fff;
+    --color-preto: #1a1a1a;
+    --color-cinza-claro: #f2f2f2;
+    --color-cinza-medio: #B3B3B3;
+    --color-azul: #0066ff;
+    --color-azul-claro: #3485ff;
+}
+
+* {
+  font-family: "Poppins", Arial, sans-serif !important;
+}
+
+body {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+}
+
+html, body {
+  min-height: 100%;
+  margin: 0;
+}
+
+main {
+    min-height: calc(100vh - 40px - 65px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.grid {
+    width: 1280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Definição de fontes */
+/* Titulos */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    margin-top: 1em;
+    margin-bottom: 0.3em;
+    line-height: 1.2em;
+}
+
+h1, h2 { font-size: 32px; }
+h3 { font-size: 28px; }
+h4 { font-size: 25px; }
+h5 { font-size: 22px; }
+h6 { font-size: 20px; }
+
+/* Textos normais */
+p {
+    margin-top: 1em;
+    line-height: 1.4em;
+    font-size: 16px;
+}
+
+
+/* Responsivo */
+
+/* Notebook */
+@media (max-width: 1366px) {
+    .grid {
+        width: 985px;
+    }
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .grid {
+        width: 728px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+    .grid {
+        width: 340px;
+    }
+}
