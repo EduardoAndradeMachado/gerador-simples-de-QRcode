@@ -45,12 +45,16 @@ button:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
     background: var(--color-cinza-claro);
     border: 1px solid #e0e0e0;
     border-radius: 8px;
-
     padding: 18px;
+    gap: 20px;
+}
+
+.option-card p {
+    margin-top: 0px;
+    line-height: 0px;
 }
 
 .option-card:hover {
